@@ -17,9 +17,7 @@ const Footer = (props) => {
     <footer
       className={
         props.history.location.pathname === "/" ||
-        props.history.location.pathname === "/designer"
-          ? "footerYellow"
-          : props.history.location.pathname === "/about"
+        props.history.location.pathname === "/about"
           ? "footerBlue"
           : "footerRed"
       }

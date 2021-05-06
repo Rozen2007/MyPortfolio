@@ -22,7 +22,7 @@ export const pageDataArr = [
       "The main area of my expertise is Front-End Design & Development (client side of web). I can design and develop slick, interactive, Responsive and Performance Efficient Web Apps. I have 2 years of programming experience",
   },
   {
-    introTitle: "DESIGN",
+    introTitle: "",
     introHead:
       "I love to design experiences that not only complete the functional value but also loved by people.",
     introDesc:

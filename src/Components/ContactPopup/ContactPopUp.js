@@ -24,7 +24,6 @@ const ContactPopUp = React.forwardRef((props, ref) => {
   const routesArr = [
     { name: "INTRO", route: "/" },
     { name: "ABOUT", route: "/about" },
-    { name: "DESIGNER", route: "/designer" },
     { name: "DEVELOPER", route: "/developer" },
   ];
 
@@ -63,9 +62,7 @@ const ContactPopUp = React.forwardRef((props, ref) => {
                 //changing color of email on mouseover
                 onMouseOver={() =>
                   props.history.location.pathname === "/" ||
-                  props.history.location.pathname === "/designer"
-                    ? onmouseover(emailAdd, "#ffd42d")
-                    : props.history.location.pathname === "/developer"
+                  props.history.location.pathname === "/developer"
                     ? onmouseover(emailAdd, "#fb6542")
                     : onmouseover(emailAdd, "#1544cd")
                 }

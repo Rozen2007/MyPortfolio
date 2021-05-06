@@ -96,9 +96,7 @@ const Navbar = (props) => {
       <div
         className={
           props.history.location.pathname === "/" ||
-          props.history.location.pathname === "/designer"
-            ? "navbar__innerWrapper"
-            : props.history.location.pathname === "/about"
+          props.history.location.pathname === "/about"
             ? "bluenavbar__innerWrapper"
             : "rednavbar__innerWrapper "
         }
@@ -109,9 +107,7 @@ const Navbar = (props) => {
               onClick={() => changeRouteOne("/", 0, props)}
               src={
                 props.history.location.pathname === "/" ||
-                props.history.location.pathname === "/designer"
-                  ? logoImg
-                  : props.history.location.pathname === "/developer"
+                props.history.location.pathname === "/developer"
                   ? WhitelogoImg
                   : WhitelogoImg
               }
@@ -122,7 +118,7 @@ const Navbar = (props) => {
         <div
           className={
             props.history.location.pathname === "/" ||
-            props.history.location.pathname === "/designer"
+            props.history.location.pathname === "/"
               ? "menuItems"
               : "bluemenuItems"
           }
@@ -155,7 +151,7 @@ const Navbar = (props) => {
             height="1.5rem"
             fill={
               props.history.location.pathname === "/" ||
-              props.history.location.pathname === "/designer"
+              props.history.location.pathname === "/"
                 ? "black"
                 : props.history.location.pathname === "/developer"
                 ? "white"
@@ -176,9 +172,7 @@ const Navbar = (props) => {
             width="1.2rem"
             fill={
               props.history.location.pathname === "/" ||
-              props.history.location.pathname === "/designer"
-                ? "black"
-                : props.history.location.pathname === "/developer"
+              props.history.location.pathname === "/developer"
                 ? "white"
                 : "white"
             }

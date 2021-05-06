@@ -25,7 +25,7 @@ function App(props) {
 
   if (
     props.history.location.pathname === "/" ||
-    props.history.location.pathname === "/designer"
+    props.history.location.pathname === "/"
   ) {
     document.body.style.backgroundColor = "#ffd42d";
   } else if (props.history.location.pathname === "/developer") {
@@ -45,13 +45,6 @@ function App(props) {
             exact
             path="/about"
             component={() => <AboutPage text="Who" pageData={pageData[1]} />}
-          />
-          <Route
-            exact
-            path="/designer"
-            component={() => (
-              <DesignPage page="" text="" pageData={pageData[2]} />
-            )}
           />
           <Route
             exact
